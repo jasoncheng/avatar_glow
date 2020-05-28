@@ -143,8 +143,8 @@ class _AvatarGlowState extends State<AvatarGlow>
           shape: widget.shape,
           // If the user picks a curve that goes below 0 or above 1
           // this opacity will have unexpected effects without clamping
-          color: widget.glowColor
-              .withOpacity(alphaAnimation.value.clamp(0.0, 1.0)),
+          color: widget.glowColor.withOpacity(0.3)
+              // .withOpacity(alphaAnimation.value.clamp(0.0, 1.0)),
         );
 
         return Container(
